@@ -277,10 +277,7 @@ main .container {
   margin-top: 16px;
 }
 
-.tools-card-wrapper {
-  margin-left: -40px;
-  transition: all 0.2s cubic-bezier(0.78, 0.22, 0, 0.88);
-}
+
 
 .tools-card {
   width: 48px;

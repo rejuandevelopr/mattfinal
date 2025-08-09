@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matt Silverman</title>
+    <!-- DNS and connection hints -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+        const isDark = sessionStorage.getItem('darkMode') === 'true';
+        if (isDark) {
+            document.documentElement.classList.add('dark-mode', 'dark-mode-static');
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-flex">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="scramble-auto scramble-text text" data-text="MATT SILVERMAN">MATT SILVERMAN</span>
+                        <span class="scramble-auto text" data-text="PRODUCT DESIGNER">PRODUCT DESIGNER</span>
+                    </a>
+                    <div class="d-flex flex-column gap-4px">
+                        <span class="scramble-auto text" data-text="SAN DIEGO, CA">SAN DIEGO, CA</span>
+                        <span class="text" id="pst-time">PST</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start gap-3 toggle-content">
+                    <a href="https://x.com/mattjss" target="_blank">[<span class="scramble-text text"
+                            data-text="Twitter/x">Twitter/x</span>]</a>
+                    <a href="https://www.linkedin.com/in/matt-silverman-67126a3a/" target="_blank">[<span
+                            class="scramble-text text" data-text="Linkedin">Linkedin</span>]</a>
+                    <label class="toggle-switch">
+                        <input type="checkbox" class="no-animate">
+                        <div class="toggle-switch-background">
+                            <div class="toggle-switch-handle"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <section>
+                <p class="mb-0">0–1 product designer helping companies transform complex problems into enjoyable,
+                    user-friendly solutions. My experience spans multiple startups, mostly in the sports betting and
+                    crypto industries. I’m currently focused on creative coding, motion, and prototyping.</p>
+            </section>
+            <section class="recent-work">
+                <h1>PREVIOUSLY</h1>
+                <div class="recent-work-content">
+                    <div>
+                        <div class="recent-work-content__head">
+                            <span>MakersPlace</span>
+                            <span>2022-2025</span>
+                        </div>
+                        <p>Helped design and launch experiences for crypto artists and collectors. Led design
+                            initiatives across all product surface areas, including design systems and the redesign of
+                            the MakersPlace product.</p>
+                    </div>
+                    <div>
+                        <div class="recent-work-content__head">
+                            <span>Olympus Finance</span>
+                            <span>2021-2022</span>
+                        </div>
+                        <p>Worked on design systems, and the Olympus Give, Stake, Wrap, & Bond products.</p>
+                    </div>
+                    <div>
+                        <div class="recent-work-content__head">
+                            <span>Odyssey DAO</span>
+                            <span>2021</span>
+                        </div>
+                        <p>Part of the founding team that created odysseydao.com, which won Best Education Product by
+                            Product Hunt in 2021.</p>
+                    </div>
+                    <div>
+                        <div class="recent-work-content__head">
+                            <span>The Action Network</span>
+                            <span>2019-2020</span>
+                        </div>
+                        <p>Worked on various projects and features for the Action App and website.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>INTERESTS</h2>
+                <ul class="mt-3">
+                    <li>Human Computer Interaction</li>
+                    <li>Creative Coding</li>
+                    <li>Motion + Interaction Design</li>
+                    <li>Japanese + Swiss Graphic Design</li>
+                    <li>Horology + Swiss Watchmaking</li>
+                    <li>The future of money - Bitcoin & Bitcoin DeFi (Stacks L2)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>TOOLS</h2>
+                <div class="tools-card-main">
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNotion">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_5002_7563)">
+                                    <path
+                                        d="M2.16094 3.18061L14.2412 1.34459C15.724 1.10128 16.1124 1.15795 17.0931 1.76762L21.1401 4.19999C21.8087 4.62043 22.0296 4.73198 22.0619 5.24356L23.0093 20.2271C23.0686 21.1662 22.7631 21.748 21.5759 21.925L7.53569 23.8696C6.64344 23.9812 6.20916 23.8861 5.70262 23.3245L2.61481 19.8315C2.05986 19.1876 1.81541 18.6924 1.7776 18.0943L0.935534 4.7757C0.886989 4.00789 1.18715 3.34131 2.16094 3.18061Z"
+                                        fill="#FEFEFE" class="svg-1" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.2412 1.34481L2.16095 3.18083C1.18715 3.34131 0.887003 4.00811 0.935534 4.7757L1.7776 18.0943C1.81539 18.6922 2.05985 19.1873 2.61481 19.8315L5.70261 23.3243C6.20915 23.8859 6.64344 23.9812 7.53567 23.8693L21.5761 21.9252C22.7625 21.7481 23.0689 21.1662 23.0095 20.2273L22.0622 5.24376C22.0315 4.75853 21.8312 4.63348 21.2413 4.26299L17.0931 1.76762C16.1127 1.15793 15.724 1.10128 14.2412 1.34459L14.2412 1.34481ZM6.7377 6.1825C5.5917 6.34902 5.33179 6.38677 4.6445 5.90533L2.8991 4.71077C2.71937 4.55257 2.79075 4.33237 3.21359 4.25687L14.8272 2.50106C15.8016 2.33966 16.3335 2.64205 16.7355 2.91102L18.8284 4.20756C18.9167 4.2442 19.1456 4.48309 18.8896 4.50289L6.88622 6.16087L6.7377 6.1825ZM6.35071 21.3871L5.5465 8.6672C5.51138 8.11171 5.66561 7.8423 6.17309 7.75981L19.9612 5.87841C20.4279 5.79974 20.6589 6.08194 20.6939 6.63655L21.4928 19.2717C21.5279 19.8272 21.4721 20.3036 20.7086 20.4053L7.51376 22.198C6.75027 22.2996 6.39414 22.0705 6.35093 21.387L6.35071 21.3871ZM18.6626 8.3381C18.7718 8.71577 18.7112 9.10657 18.3301 9.18016L17.6998 9.35622L18.2936 18.7475C17.7582 19.089 17.2587 19.2991 16.8323 19.332C16.1508 19.3847 15.9671 19.1843 15.4162 18.5839L10.8265 12.3331L11.2286 18.6931L12.568 18.8903C12.568 18.8903 12.6166 19.6587 11.5512 19.7411L8.62497 20.1389C8.5286 19.9742 8.58717 19.541 8.87945 19.433L9.63303 19.1607L9.10136 10.7515L8.03143 10.7476C7.92159 10.3699 8.09927 9.79865 8.69317 9.70948L11.8311 9.25344L16.5951 15.5762L16.2227 9.68536L15.1076 9.64363C14.9923 9.17973 15.3113 8.81152 15.7342 8.7369L18.6626 8.3381Z"
+                                        fill="#0D0D0D" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5002_7563">
+                                        <rect width="22" height="22" fill="white"
+                                            transform="matrix(0.997023 -0.0771094 0.0630985 0.998007 0.78125 2.33545)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Notion</span>
+                            <div class="tooltip-content">
+                                <span>NOTES</span>
+                                <span>STRATEGY DOCS</span>
+                            </div>
+                            <a href="#">[<span class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Notion -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasNotion"
+                        aria-labelledby="offcanvasNotionLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Notion</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>NOTES</span>
+                                    <span>STRATEGY DOCS</span>
+                                </div>
+                                <a href="#">[<span class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAgents">
+                            <div class="tools-card-icon__grid">
+                                <div class="icon__grid">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_5002_4622)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.151 2.18087L9.93961 5.20349L11.0681 5.2824L10.7673 9.58357L9.5474 9.49826L9.36196 12.1501L6.61705 9.37104L6.43845 11.9252L5.98497 11.8935L6.16378 9.33642L3.05528 11.7091L3.24319 9.02192L2.04112 8.93787L2.34186 4.63712L3.5406 4.72094L3.74952 1.73324L6.49236 4.63748L6.67559 2.01721L7.12865 2.04889L6.94002 4.74647L10.151 2.18087ZM6.87172 5.7291L6.65899 8.77125L8.97833 11.1196L9.18635 8.14478L6.87172 5.7291ZM6.41725 5.6639L3.78889 7.73477L3.5786 10.742L6.20219 8.73931L6.41722 5.66432L6.41725 5.6639ZM9.57867 9.05102L10.3451 9.10461L10.5833 5.69835L7.27931 5.46731L9.65584 7.94746L9.57867 9.05102ZM6.08595 5.34836L2.76365 5.11604L2.52546 8.52231L3.27363 8.57462L3.3485 7.50391L6.08556 5.34791L6.08595 5.34836ZM4.13103 2.7941L3.99413 4.75182L6.12019 4.90049L4.13103 2.7941ZM9.62553 3.17831L7.36258 4.98737L9.48863 5.13603L9.62553 3.17831Z"
+                                                fill="#0D0D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5002_4622">
+                                                <rect width="12" height="12" fill="white"
+                                                    transform="translate(1 0.538574) rotate(4)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="icon__grid">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.37638 6.76957L4.41519 5.80652L4.45513 5.71325L4.4256 5.65772L4.33041 5.65107L4.00344 5.60815L2.88414 5.49939L1.91475 5.39109L0.976427 5.27452L0.742607 5.20763L0.540308 4.89902L0.5734 4.75431L0.782243 4.63483L1.06564 4.67971L1.69443 4.7667L2.63669 4.89858L3.32053 4.98692L4.33105 5.16409L4.49274 5.1754L4.52016 5.11174L4.46732 5.06711L4.42732 5.0238L3.4936 4.29188L2.48192 3.51609L1.95486 3.07324L1.6682 2.84811L1.53033 2.6455L1.49396 2.22193L1.78761 1.9409L2.15206 1.99145L2.2438 2.02334L2.59504 2.33443L3.34521 3.00339L4.32732 3.83768L4.47019 3.97465L4.53346 3.93605L4.54348 3.90626L4.48327 3.78761L3.99116 2.73154L3.4625 1.65454L3.22482 1.20687L3.17215 0.944638C3.15213 0.843936 3.14473 0.741135 3.15011 0.638605L3.49046 0.239291L3.66602 0.195597L4.07611 0.280243L4.2401 0.443748L4.45671 1.0495L4.80841 2.00511L5.36668 3.30973L5.53011 3.69624L5.60694 4.04913L5.63735 4.15776L5.70302 4.16235L5.70727 4.10167L5.81005 3.39629L5.96945 2.53239L6.14338 1.41889L6.19873 1.10532L6.38146 0.738005L6.70625 0.555216L6.94086 0.688573L7.12046 0.987245L7.0797 1.16985L6.90703 1.93091L6.5903 3.1213L6.38256 3.91791L6.47068 3.92407L6.57872 3.83055L7.02609 3.31634L7.77274 2.50645L8.1 2.18683L8.47958 1.83579L8.71947 1.67254L9.14883 1.70256L9.43192 2.19392L9.2567 2.66869L8.7753 3.19765L8.37592 3.64672L7.80112 4.31659L7.43323 4.85891L7.46038 4.90675L7.5391 4.90391L8.74381 4.73503L9.3933 4.6635L10.1677 4.58607L10.5026 4.77156L10.529 4.93839L10.3692 5.26428L9.53664 5.40906L8.56348 5.53398L7.11042 5.77195L7.09209 5.7832L7.11068 5.80998L7.75029 5.91569L8.0244 5.94989L8.69859 5.99703L9.94732 6.17833L10.2605 6.41826L10.439 6.69723L10.3921 6.89652L9.86901 7.11891L9.19865 6.90956L7.63357 6.42002L7.0978 6.24514L7.02215 6.23985L7.01895 6.28557L7.44222 6.76126L8.22341 7.57189L9.19856 8.61328L9.23454 8.85722L9.08748 9.03698L8.94758 9.00673L8.07923 8.25391L7.74722 7.91868L6.99376 7.18935L6.94056 7.18563L6.93562 7.25629L7.1013 7.53895L7.97367 9.07062L7.99299 9.52307L7.91207 9.66485L7.65316 9.73572L7.37905 9.66559L6.8639 8.82553L6.33873 7.88368L5.92012 7.04285L5.8596 7.07203L5.36861 10.0676L5.22651 10.2122L4.91536 10.3074L4.67646 10.0981L4.56433 9.77827L4.74107 9.17413L4.95868 8.38572L5.13408 7.75893L5.30818 6.9775L5.39721 6.71975L5.39345 6.70195L5.33473 6.70536L4.68152 7.48127L3.6898 8.642L2.91876 9.35871L2.74191 9.41484L2.45464 9.24021L2.50173 8.967L2.68553 8.73383L3.76635 7.54132L4.41959 6.80092L4.83771 6.37655L4.83981 6.31071L4.81695 6.30911L2.06084 7.83557L1.58691 7.86341L1.39774 7.65972L1.44477 7.35142L1.54785 7.25713L2.37905 6.76725L2.37638 6.76957Z"
+                                            fill="#0D0D0D" />
+                                    </svg>
+                                </div>
+                                <div class="icon__grid">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_5002_4627)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.94275 7.18157L8.43021 4.96236C8.60116 4.85318 8.83023 4.9164 8.89491 5.10846C9.23339 6.12162 8.96861 7.29184 8.10047 8.04728C7.23274 8.80276 6.09139 8.90172 5.08811 8.4239L3.92474 8.86758C5.46387 10.0867 7.4457 9.95041 8.75821 8.80752C9.79937 7.90127 10.1936 6.59434 9.99551 5.37714L9.9978 5.38022C9.71222 3.59261 10.2706 2.92494 11.4136 1.56009C11.4409 1.52775 11.4682 1.49541 11.4952 1.46221L10.027 2.74L10.0273 2.73584L4.94144 7.18232M4.21652 7.72933C3.13362 6.53839 3.45404 4.83534 4.51297 3.91405C5.29617 3.23244 6.51667 3.01705 7.53294 3.53003L8.69361 3.08908C8.47194 2.90083 8.22603 2.74316 7.96245 2.62027C7.30101 2.29396 6.55786 2.17053 5.82645 2.26549C5.09504 2.36046 4.40804 2.66959 3.85187 3.154C2.72532 4.13447 2.28069 5.73235 2.75257 7.1554C3.10508 8.21883 2.35774 8.90127 1.60492 9.59044C1.33763 9.83489 1.06996 10.0789 0.84984 10.3417L4.21519 7.73049"
+                                                fill="#0D0D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5002_4627">
+                                                <rect width="10" height="10" fill="white"
+                                                    transform="translate(1.53516 0.557129) rotate(4)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="icon__grid">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_5002_4630)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.1505 5.73633C10.2758 5.43588 10.3346 5.11186 10.3229 4.78653C10.3112 4.46121 10.2293 4.14226 10.0827 3.85159C9.63756 2.94751 8.65257 2.4292 7.64529 2.57011C7.44246 2.31133 7.18715 2.09843 6.89614 1.9454C6.60513 1.79237 6.28501 1.70269 5.95686 1.68226C4.9424 1.60923 3.99701 2.19095 3.61824 3.1218C3.29289 3.16359 2.98014 3.27409 2.70075 3.44595C2.42135 3.61782 2.18169 3.84713 1.99767 4.11868C1.71996 4.5229 1.57959 5.00571 1.59728 5.49582C1.61498 5.98593 1.78982 6.45736 2.09596 6.8405C1.97054 7.14098 1.91162 7.46505 1.92325 7.79045C1.93489 8.11585 2.01681 8.43487 2.16338 8.72563C2.60848 9.62971 3.5935 10.1476 4.60076 10.0071C4.80351 10.2658 5.05876 10.4787 5.34972 10.6316C5.64067 10.7846 5.96072 10.8742 6.2888 10.8945C7.30406 10.968 8.24989 10.3859 8.62872 9.45423C8.95429 9.41247 9.26725 9.30191 9.54681 9.1299C9.82638 8.95789 10.0661 8.72837 10.2502 8.45658C10.5274 8.05235 10.6674 7.56973 10.6496 7.07989C10.6317 6.59005 10.4569 6.11891 10.151 5.73595L10.1505 5.73633ZM6.33101 10.2968C5.92551 10.2695 5.5422 10.1018 5.24687 9.82256C5.26153 9.81607 5.28698 9.80448 5.30389 9.79564L7.22292 8.87309C7.27077 8.85061 7.31173 8.81571 7.34152 8.77203C7.37132 8.72835 7.38886 8.67748 7.39232 8.62472L7.57183 6.05765L8.32094 6.55654C8.32896 6.56128 8.33381 6.56955 8.33445 6.57837L8.18578 8.70443C8.11844 9.64953 7.28882 10.3617 6.33101 10.2968ZM2.70963 8.46393C2.53042 8.1037 2.4855 7.69138 2.58294 7.30101C2.59566 7.31025 2.61875 7.32648 2.63513 7.33724L4.40709 8.51788C4.49683 8.57846 4.6128 8.58657 4.71051 8.5391L7.0531 7.4131L6.99096 8.30177C6.99082 8.30634 6.98958 8.31081 6.98733 8.3148C6.98509 8.31879 6.98191 8.32218 6.97808 8.32467L5.03834 9.25664C4.17443 9.67071 3.13292 9.31553 2.71011 8.46313L2.70963 8.46393ZM2.50171 4.45466C2.73028 4.12062 3.06877 3.87735 3.45825 3.76721L3.45303 3.82991L3.30596 5.93311C3.30201 5.9859 3.31228 6.03878 3.3357 6.08626C3.35912 6.13373 3.39483 6.17406 3.43912 6.20306L5.60223 7.64371L4.79136 8.03393C4.78733 8.03613 4.78282 8.03731 4.77823 8.03735C4.77364 8.03739 4.7691 8.0363 4.76503 8.03418L2.97355 6.84005C2.17746 6.30822 1.96634 5.24173 2.50124 4.45546L2.50171 4.45466ZM8.80693 6.37416L6.64385 4.9331L7.45465 4.54371C7.45865 4.54143 7.46315 4.54018 7.46775 4.54007C7.47235 4.53995 7.4769 4.54097 7.48101 4.54304L9.27255 5.73634C10.0699 6.26825 10.2813 7.33644 9.74436 8.12215C9.51564 8.45595 9.17741 8.69929 8.78821 8.81004L8.93967 6.64408C8.94362 6.5914 8.93339 6.53861 8.91004 6.49122C8.88669 6.44383 8.85108 6.40355 8.8069 6.37458L8.80693 6.37416ZM9.66354 5.27583C9.64617 5.26352 9.62863 5.25143 9.61095 5.23957L7.83899 4.05892C7.79475 4.02918 7.74348 4.01158 7.69031 4.00786C7.63714 4.00414 7.58392 4.01444 7.53598 4.03773L5.19339 5.16373L5.25553 4.27507C5.25567 4.27049 5.25691 4.26602 5.25916 4.26203C5.2614 4.25804 5.26458 4.25465 5.26841 4.25216L7.2077 3.32059C8.07205 2.90612 9.11437 3.26178 9.53585 4.11534C9.71406 4.47573 9.75968 4.88658 9.66354 5.27583ZM4.67264 6.5182L3.9235 6.01973C3.91957 6.01745 3.91627 6.01422 3.91392 6.01033C3.91156 6.00645 3.91022 6.00203 3.91002 5.99749L4.05869 3.87143C4.12529 2.92502 4.95701 2.21255 5.91628 2.28047C6.32195 2.30883 6.70451 2.47676 6.99876 2.75463C6.9841 2.76112 6.95906 2.77274 6.94218 2.78117L5.02316 3.70372C4.97523 3.72614 4.93419 3.76101 4.90432 3.80469C4.87445 3.84837 4.85684 3.89926 4.85334 3.95206L4.67267 6.51779L4.67264 6.5182ZM5.15962 5.64672L6.20297 5.14536L7.16638 5.78704L7.08645 6.93009L6.04311 7.43144L5.07927 6.78973L5.1592 5.64669L5.15962 5.64672Z"
+                                                fill="#0D0D0D" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5002_4630">
+                                                <rect width="10" height="10" fill="white"
+                                                    transform="translate(1.48438 0.952148) rotate(4)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="tooltip">Tool Name</div>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">AI Agents</span>
+                            <div class="tooltip-content">
+                                <span>AI CONVERSATIONAL AGENTS</span>
+                            </div>
+                            <a href="https://www.perplexity.ai/" target="_blank" aria-label="AI Agents">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Agents -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasAgents"
+                        aria-labelledby="offcanvasAgentsLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">AI Agents</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>AI CONVERSATIONAL AGENTS</span>
+                                </div>
+                                <a href="#">[<span class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCursor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_5002_7580)">
+                                    <path
+                                        d="M12.5344 23.4487L21.7151 17.2228L11.8403 12.4706L2.65954 18.6966L12.5344 23.4487Z"
+                                        fill="url(#paint0_linear_5002_7580)" />
+                                    <path
+                                        d="M21.7135 17.2229L21.0194 6.24484L11.1445 1.49268L11.8386 12.4708L21.7135 17.2229Z"
+                                        fill="url(#paint1_linear_5002_7580)" />
+                                    <path
+                                        d="M11.145 1.49262L1.96423 7.71853L2.65831 18.6966L11.8391 12.4707L11.145 1.49262Z"
+                                        fill="url(#paint2_linear_5002_7580)" />
+                                    <path d="M21.02 6.24457L12.5333 23.4486L11.8392 12.4705L21.02 6.24457Z"
+                                        fill="#555555" />
+                                    <path d="M21.0204 6.24451L11.8397 12.4704L1.96484 7.71826L21.0204 6.24451Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_5002_7580" x1="11.8403" y1="12.4706" x2="12.6884"
+                                        y2="23.4368" gradientUnits="userSpaceOnUse">
+                                        <stop class="cursor-icon" offset="0.16" stop-opacity="0.39" />
+                                        <stop class="cursor-icon" offset="0.658" stop-opacity="0.8" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_5002_7580" x1="21.0215" y1="6.27869" x2="11.8043"
+                                        y2="12.5448" gradientUnits="userSpaceOnUse">
+                                        <stop class="cursor-icon" offset="0.182" stop-opacity="0.31" />
+                                        <stop class="cursor-icon-dark" offset="0.715" stop-opacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_5002_7580" x1="11.145" y1="1.49262" x2="2.77898"
+                                        y2="18.7551" gradientUnits="userSpaceOnUse">
+                                        <stop class="cursor-icon" stop-opacity="0.6" />
+                                        <stop class="cursor-icon" offset="0.667" stop-opacity="0.22" />
+                                    </linearGradient>
+                                    <clipPath id="clip0_5002_7580">
+                                        <rect width="22" height="22" fill="white"
+                                            transform="matrix(0.997023 -0.0771094 0.0630985 0.998007 0.246094 2.33545)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Cursor AI</span>
+                            <div class="tooltip-content">
+                                <span>AI CODE EDITOR</span>
+                            </div>
+                            <a href="https://cursor.com/" target="_blank" aria-label="Cursor AI">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Cursor AI -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasCursor"
+                        aria-labelledby="offcanvasCursorLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Cursor AI</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>AI CODE EDITOR</span>
+                                </div>
+                                <a href="https://cursor.com/" target="_blank" aria-label="Cursor AI">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasv0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
+                                fill="none">
+                                <g clip-path="url(#clip0_5002_7587)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.134 10.2346L21.7413 10.6683C21.829 10.6751 21.9164 10.6878 21.9993 10.7063L15.7764 16.112C15.7695 16.0234 15.7687 15.9345 15.7742 15.846L16.129 10.2342L13.8857 10.0607L13.5309 15.6725C13.4966 16.2132 13.569 16.7568 13.7441 17.2723C13.9191 17.7878 14.1934 18.2651 14.5511 18.677C14.9089 19.0888 15.3432 19.4271 15.8291 19.6725C16.3151 19.918 16.8432 20.0657 17.3833 20.1074L22.9906 20.541L23.1326 18.2955L17.5253 17.8619C17.4356 17.8549 17.3472 17.8421 17.2622 17.8235L23.4895 12.4131C23.4969 12.5034 23.4978 12.5939 23.4924 12.6841L23.1376 18.2959L25.3799 18.4693L25.7347 12.8565C25.7689 12.3161 25.6964 11.7726 25.5213 11.2573C25.3463 10.742 25.0721 10.2648 24.7144 9.85311C24.3568 9.44139 23.9227 9.10317 23.4369 8.85775C22.9511 8.61233 22.4232 8.46452 21.8832 8.42276L16.276 7.9891L16.134 10.2346ZM1.97176 8.38715L1.97138 8.39314L9.01689 18.7543C9.86393 19.9992 11.7885 19.4932 11.8829 18.0001L12.4395 9.19672L10.1972 9.0233L9.76371 15.8796L4.81926 8.60737L1.97176 8.38715Z"
+                                        fill="#0D0D0D" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5002_7587">
+                                        <rect width="24" height="24" fill="white"
+                                            transform="matrix(0.997023 0.0771094 -0.0630985 0.998007 2.44531 0.901855)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head"><span style="text-transform: lowercase;">v</span>0</span>
+                            <div class="tooltip-content">
+                                <span>AI WEB DEVELOPMENT</span>
+                            </div>
+                            <a href="https://v0.dev/" target="_blank" aria-label="AI WEB DEVELOPMENT">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for v0 -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasv0"
+                        aria-labelledby="offcanvasv0Label">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head"><span style="text-transform: lowercase;">v</span>0</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>AI WEB DEVELOPMENT</span>
+                                </div>
+                                <a href="https://v0.dev/" target="_blank" aria-label="AI WEB DEVELOPMENT">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFigma">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
+                                fill="none">
+                                <g clip-path="url(#clip0_5002_7590)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0271 4.82384L9.67417 5.00581C8.37466 5.10632 7.38786 6.24229 7.47011 7.54309C7.55235 8.84388 8.67248 9.81691 9.97199 9.71641L12.325 9.53443L12.0271 4.82384ZM11.9262 3.22702L13.5214 3.10365L15.8744 2.92167C18.055 2.75302 19.9344 4.38573 20.0724 6.56843C20.1538 7.85649 19.6107 9.04823 18.7035 9.84343C19.702 10.4913 20.3897 11.5878 20.4712 12.8759C20.6092 15.0585 18.9535 16.9647 16.7729 17.1333C15.8912 17.2015 15.0588 16.9752 14.3707 16.5371L14.4199 17.3153L14.5689 19.6706C14.7069 21.8533 13.051 23.7594 10.8705 23.928C8.68997 24.0967 6.81043 22.464 6.67244 20.2813C6.59099 18.9931 7.13423 17.8015 8.04135 17.0063C7.043 16.3584 6.35509 15.2619 6.27365 13.9739C6.19222 12.6858 6.73546 11.4941 7.6426 10.6989C6.64423 10.0511 5.95631 8.95452 5.87487 7.66646C5.73687 5.48377 7.39267 3.57764 9.57321 3.409L11.9262 3.22702ZM13.6224 4.70046L13.9202 9.41105L16.2732 9.22908C17.5727 9.12857 18.5594 7.9926 18.4772 6.69181C18.3949 5.39101 17.2749 4.41797 15.9754 4.51848L13.6224 4.70046ZM10.3708 16.0238L12.7237 15.8418L12.5752 13.4926L12.5748 13.4866L12.5745 13.4805L12.4259 11.1313L10.073 11.3132C8.77344 11.4137 7.78665 12.5497 7.86889 13.8505C7.95093 15.1482 9.0659 16.1197 10.3614 16.0245L10.3708 16.0238ZM8.26767 20.1579C8.18562 18.8602 9.1675 17.7266 10.4624 17.6213L10.4717 17.6206L12.8247 17.4387L12.9736 19.794C13.0559 21.0947 12.0691 22.2307 10.7696 22.3312C9.47005 22.4317 8.34991 21.4587 8.26767 20.1579ZM14.1698 13.3585C14.0902 12.0597 15.0762 10.9263 16.3741 10.8259C17.6737 10.7254 18.7937 11.6984 18.8759 12.9992C18.9582 14.3 17.9715 15.436 16.672 15.5365C15.374 15.6369 14.255 14.6663 14.1704 13.3679L14.1698 13.3585Z"
+                                        fill="#0D0D0D" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5002_7590">
+                                        <rect width="24" height="24" fill="white"
+                                            transform="matrix(0.997023 -0.0771094 0.0630985 0.998007 0.652344 2.41455)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Figma</span>
+                            <div class="tooltip-content">
+                                <span>UI/UX DESIGN</span>
+                            </div>
+                            <a href="https://www.figma.com/" target="_blank" aria-label="Figma">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Figma -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasFigma"
+                        aria-labelledby="offcanvasFigmaLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Figma</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>UI/UX DESIGN</span>
+                                </div>
+                                <a href="https://www.figma.com/" target="_blank" aria-label="Figma">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFramer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 22"
+                                fill="none">
+                                <path
+                                    d="M1.76953 0.283203L15.3955 1.33703L14.9643 8.15675L8.15135 7.62983L1.76953 0.283203ZM1.33836 7.10292L8.15135 7.62983L14.5332 14.9765L0.907186 13.9226L1.33836 7.10292ZM0.907186 13.9226L7.72017 14.4496L7.289 21.2693L0.907186 13.9226Z"
+                                    fill="#0A0A0A" />
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Framer</span>
+                            <div class="tooltip-content">
+                                <span>UI/UX PROTOTYPING</span>
+                            </div>
+                            <a href="https://www.framer.com/" target="_blank" aria-label="Framer">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Framer -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasFramer"
+                        aria-labelledby="offcanvasFramerLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Framer</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>UI/UX PROTOTYPING</span>
+                                </div>
+                                <a href="https://www.framer.com/" target="_blank" aria-label="Framer">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPlay">
+                            <div class="Play-circle">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Play</span>
+                            <div class="tooltip-content">
+                                <span>iOS</span>
+                                <span>MOTION DESIGN</span>
+                            </div>
+                            <a href="https://createwithplay.com/" target="_blank" aria-label="Play">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Play -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasPlay"
+                        aria-labelledby="offcanvasPlayLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Play</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>iOS</span>
+                                    <span>MOTION DESIGN</span>
+                                </div>
+                                <a href="https://createwithplay.com/" target="_blank" aria-label="Play">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRive">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_5002_7600)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.16072 3.35612C4.11788 4.03366 4.63256 4.62538 5.31024 4.67779L12.2077 5.21124L15.4799 5.46431C16.6389 5.55394 17.5706 5.98554 18.2753 6.75914C18.9799 7.53275 19.2967 8.4818 19.2256 9.60631C19.1599 10.6456 18.7311 11.4685 17.9392 12.075C17.1484 12.6645 16.1735 12.9144 15.0146 12.8248L10.5948 12.4829C9.9171 12.4305 9.33301 12.9373 9.29018 13.6148C9.24734 14.2923 9.76198 14.884 10.4397 14.9364L14.8595 15.2783L15.3196 15.3138L19.2707 22.7077C19.5165 23.1547 19.8865 23.3974 20.3807 23.4356C20.9261 23.4778 21.323 23.2945 21.5715 22.8856C21.8211 22.4598 21.8081 21.9879 21.5326 21.4701L18.0187 14.8805C19.1055 14.4852 19.9848 13.8512 20.6565 12.9786C21.3293 12.089 21.7045 11.0308 21.782 9.80402C21.8607 8.56025 21.6484 7.44808 21.1452 6.46745C20.6591 5.48818 19.9385 4.69625 18.9834 4.09161C18.0294 3.46993 16.9133 3.10968 15.6351 3.01082L5.46536 2.2243C4.78768 2.17188 4.20356 2.67862 4.16072 3.35612Z"
+                                        fill="#0D0D0D" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5002_7600">
+                                        <rect width="22" height="22" fill="white"
+                                            transform="matrix(0.997023 0.0771094 -0.0630985 0.998007 2.30859 0.977051)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Rive</span>
+                            <div class="tooltip-content">
+                                <span>INTERACTIVE ANIMATION</span>
+                            </div>
+                            <a href="https://rive.app/" target="_blank" aria-label="Rive">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Rive -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasRive"
+                        aria-labelledby="offcanvasRiveLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Rive</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>INTERACTIVE ANIMATION</span>
+                                </div>
+                                <a href="https://rive.app/" target="_blank" aria-label="Rive">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasUnicorn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <path
+                                    d="M3.71069 2.15657L7.92419 1.8307L11.2014 1.57724C14.4057 1.32942 14.964 3.8642 14.8051 5.04241C14.1051 10.2309 12.6784 20.7847 12.5716 21.4926C12.5023 21.9514 12.7182 21.9995 12.8488 21.536C14.4692 15.7819 17.7666 4.07496 17.9934 3.28015C18.3472 2.05448 19.8835 0.517131 22.0953 0.877212C23.8646 1.16529 24.4568 2.98754 24.5114 3.85127L25.6296 21.5385C25.7083 22.7826 24.4867 25.2464 21.5556 24.6906C18.6246 24.1349 18.6939 21.3862 19.0949 20.0813C20.5085 16.1202 23.3941 8.02745 23.6281 7.34608C23.7537 6.98011 23.5757 6.90968 23.3798 7.24222C20.7636 11.6807 15.261 21.0164 14.18 22.8515C13.0989 24.6866 11.6855 25.2533 10.7817 25.3232C3.93082 25.853 1.44151 19.2832 1.22919 15.9249L0.593029 5.86305C0.420562 3.13519 2.5996 2.25546 3.71069 2.15657Z"
+                                    fill="#0D0D0D" />
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Unicorn Studio</span>
+                            <div class="tooltip-content">
+                                <span>GENERATIVE DESIGN</span>
+                            </div>
+                            <a href="https://www.unicorn.studio/" target="_blank" aria-label="Unicorn Studio">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Unicorn Studio -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasUnicorn"
+                        aria-labelledby="offcanvasUnicornLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Unicorn Studio</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>GENERATIVE DESIGN</span>
+                                </div>
+                                <a href="https://www.unicorn.studio/" target="_blank" aria-label="Unicorn Studio">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="tools-card-wrapper">
+                        <div class="tools-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMidjourney">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
+                                fill="none">
+                                <g clip-path="url(#clip0_5002_7606)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23.6105 20.2673C22.1482 21.4168 20.2999 22.3961 18.0787 23.2663C18.1207 23.2997 18.1609 23.3299 18.2031 23.3592L18.2204 23.3706L18.2386 23.384C18.4462 23.5234 18.6458 23.6 18.8661 23.6171C19.0874 23.6342 19.2947 23.589 19.5178 23.4829L19.5364 23.4733L19.5561 23.4638C19.701 23.3908 19.8325 23.3067 20.0697 23.1365L20.2565 23.0025C20.5493 22.7925 20.7028 22.6941 20.9084 22.5956C21.2225 22.4454 21.5354 22.3773 21.8714 22.4033C22.2074 22.4293 22.5087 22.5449 22.8008 22.742L22.8228 22.7577C23.0034 22.881 23.142 23.002 23.3951 23.2453L23.5633 23.4067C23.772 23.6074 23.8907 23.7108 24.0221 23.8032L24.049 23.8223L24.0663 23.8337C24.2681 23.9697 24.4606 24.0457 24.6728 24.0662L24.6947 24.0678C24.7374 24.0677 24.7799 24.0764 24.8194 24.0935C24.8588 24.1106 24.8944 24.1356 24.924 24.167C24.9535 24.1984 24.9763 24.2355 24.991 24.2759C25.0056 24.3164 25.0118 24.3593 25.0091 24.4021C25.0064 24.4448 24.9949 24.4864 24.9753 24.5242C24.9557 24.562 24.9284 24.5952 24.8952 24.6217C24.862 24.6483 24.8236 24.6676 24.7824 24.6784C24.7412 24.6892 24.698 24.6913 24.6557 24.6846C24.3197 24.6586 24.0184 24.5431 23.7253 24.3459C23.6962 24.3261 23.6674 24.3058 23.639 24.2851L23.6179 24.2694L23.5968 24.2547L23.5778 24.2392C23.4151 24.1102 23.26 23.9719 23.113 23.8252L22.9628 23.6812C22.8203 23.5373 22.6669 23.4047 22.504 23.2847L22.4781 23.2656L22.4598 23.2542C22.2748 23.1212 22.058 23.0403 21.8324 23.0201C21.611 23.003 21.4038 23.0481 21.1817 23.1543L21.1611 23.1637L21.1424 23.1733C20.9975 23.2464 20.866 23.3305 20.6288 23.5007L20.4629 23.6202C20.2929 23.748 20.1148 23.8649 19.9298 23.9701L19.907 23.9824L19.8842 23.9947L19.7911 24.0416C19.4939 24.1913 19.161 24.2577 18.8271 24.2338C18.4911 24.2079 18.1908 24.0924 17.8977 23.8952C17.8686 23.8754 17.8398 23.8551 17.8114 23.8344L17.7903 23.8187L17.7692 23.804L17.7444 23.785C17.6036 23.6734 17.469 23.5542 17.3411 23.4279C17.2948 23.4018 17.2557 23.3642 17.2278 23.3189L17.1352 23.2305C16.9927 23.0866 16.8393 22.954 16.6764 22.8339L16.6505 22.8149L16.6322 22.8035C16.4472 22.6705 16.2304 22.5896 16.0048 22.5694C15.7835 22.5523 15.5762 22.5974 15.3531 22.7035L15.3345 22.7131L15.3148 22.7226C15.1699 22.7957 15.0384 22.8798 14.8012 23.05L14.6353 23.1695C14.4653 23.2973 14.2872 23.4142 14.1022 23.5194L14.0784 23.5316L14.0556 23.5439L13.9625 23.5908C13.6656 23.7404 13.3331 23.8068 12.9995 23.7831C12.6635 23.7571 12.3622 23.6416 12.0701 23.4445C12.041 23.4247 12.0122 23.4044 11.9838 23.3837L11.9627 23.368L11.9416 23.3533L11.9216 23.3377C11.7589 23.2087 11.6038 23.0704 11.4568 22.9237L11.3076 22.7798C11.1651 22.6359 11.0117 22.5033 10.8488 22.3832L10.8219 22.3641L10.8046 22.3528C10.6193 22.2196 10.4021 22.1387 10.1762 22.1186C9.95585 22.1016 9.74861 22.1467 9.52549 22.2528L9.50586 22.2623L9.48722 22.2719C9.34134 22.3449 9.21078 22.4291 8.97359 22.5993L8.80773 22.7188C8.63734 22.8466 8.45896 22.9634 8.27364 23.0686L8.25082 23.0809L8.22801 23.0932L8.13487 23.1401C7.82675 23.2946 7.48058 23.3596 7.13514 23.3276C6.39704 23.1802 5.84405 22.8466 5.30541 22.3176L5.27241 22.2849C5.22814 22.2404 5.16145 22.17 5.09196 22.0965L4.90797 21.9007L4.8076 21.7927L4.79726 21.7818C4.704 21.6749 4.59664 21.5813 4.47822 21.5034C4.4494 21.4862 4.41806 21.4736 4.3854 21.4662L4.38041 21.4658C4.26038 21.4786 4.1394 21.5063 4.01355 21.5477C3.98984 21.5703 3.96262 21.5888 3.93293 21.6027L3.92464 21.607C3.88438 21.6242 3.84082 21.6324 3.79687 21.6313C3.51635 21.7611 3.24731 21.9141 2.99249 22.0885L2.55728 22.3798L2.49973 22.4185C2.38931 22.4921 2.27661 22.5624 2.1618 22.629C1.84465 22.8121 1.59157 22.9008 1.34431 22.8817C1.267 22.8709 1.19622 22.8312 1.14608 22.7708C1.09594 22.7103 1.07013 22.6335 1.07379 22.5555C1.07745 22.4776 1.11032 22.4043 1.16584 22.3503C1.22136 22.2963 1.29545 22.2656 1.37333 22.2642L1.38331 22.265C1.47304 22.2719 1.62152 22.2212 1.83249 22.1011L1.87408 22.0773C1.95426 22.0293 2.04398 21.9731 2.15583 21.8995L2.55868 21.6288L2.62147 21.5865C2.90167 21.4016 3.14949 21.2532 3.38116 21.1388L2.82639 19.8824C2.80561 19.8351 2.79687 19.7834 2.80096 19.7322C2.80505 19.681 2.82184 19.6318 2.84981 19.5891C2.87778 19.5463 2.91604 19.5114 2.96114 19.4874C3.00624 19.4635 3.05675 19.4512 3.10809 19.4519L23.417 19.7138C23.4811 19.7145 23.5435 19.7352 23.5958 19.773C23.6481 19.8107 23.6876 19.8637 23.7089 19.9245C23.7301 19.9853 23.7321 20.0509 23.7144 20.1124C23.6968 20.1738 23.6605 20.2279 23.6105 20.2673ZM22.487 20.3208L3.58458 20.0764L3.95528 20.9164C4.08573 20.8814 4.21544 20.8583 4.34843 20.8465C4.36574 20.8447 4.38319 20.8444 4.40059 20.8456C4.5322 20.8557 4.6578 20.8975 4.77957 20.9681C4.92751 21.0528 5.0614 21.1694 5.23905 21.3547L5.25406 21.3709L5.34036 21.4638L5.47547 21.6086L5.56657 21.7049C5.62759 21.7698 5.684 21.8284 5.71701 21.861C6.17419 22.3156 6.62066 22.5908 7.21994 22.7154L7.23091 22.7162C7.44196 22.7268 7.65152 22.6837 7.83997 22.5908L7.8616 22.5815L7.88124 22.5719L7.89988 22.5624C8.04576 22.4894 8.17632 22.4052 8.41351 22.235L8.60032 22.101C8.89313 21.891 9.04663 21.7926 9.25223 21.6941C9.5673 21.544 9.87919 21.4759 10.2162 21.5019C10.5512 21.5278 10.8525 21.6434 11.1446 21.8405L11.1666 21.8562C11.3472 21.9795 11.4868 22.1006 11.7399 22.3439L11.9071 22.5052C12.1168 22.706 12.2345 22.8093 12.3669 22.9018L12.3928 22.9209L12.4111 22.9323C12.6176 23.0726 12.8182 23.1493 13.0385 23.1664C13.2598 23.1835 13.4671 23.1383 13.6892 23.0322L13.7088 23.0226L13.7275 23.0131C13.8734 22.9401 14.0049 22.856 14.2421 22.6858L14.4279 22.5517C14.7217 22.3418 14.8752 22.2433 15.0808 22.1449C15.3949 21.9947 15.7078 21.9266 16.0438 21.9526C16.3798 21.9786 16.6801 22.0941 16.9732 22.2913L16.9972 22.3082C17.1767 22.4314 17.3163 22.5535 17.5704 22.7968C19.4872 22.0645 21.1224 21.2553 22.465 20.3352L22.487 20.3208ZM5.93769 3.2053C8.28524 4.42385 10.7758 6.50289 12.7333 8.97798C15.0156 11.8623 16.4623 15.1112 16.7792 18.4663C16.784 18.5208 16.7744 18.5754 16.7514 18.6246C16.7283 18.6738 16.6926 18.7159 16.6478 18.7465C16.6031 18.7771 16.5509 18.7953 16.4966 18.7991C16.4422 18.8029 16.3876 18.7922 16.3383 18.7682C14.0569 17.644 11.8912 17.1626 9.83228 17.2421C8.08584 17.3076 6.45524 17.7752 4.92316 18.5703C4.61855 18.7293 4.31649 18.3409 4.54801 18.086C6.54708 15.8788 7.43619 13.3049 7.37583 10.4882C7.32603 8.18571 6.63878 5.80786 5.52195 3.61643C5.4928 3.55783 5.48266 3.49178 5.49296 3.42764C5.50327 3.3635 5.5335 3.30451 5.57937 3.25903C5.62524 3.21355 5.68443 3.18388 5.74856 3.17422C5.81269 3.16457 5.8785 3.17541 5.93669 3.20523L5.93769 3.2053ZM12.1527 6.11697C13.8912 6.79599 15.9005 8.51489 17.6498 10.7974C19.486 13.1939 20.8799 15.9954 21.5054 18.6994C21.5181 18.7554 21.5152 18.8136 21.4969 18.8676C21.4786 18.9215 21.4457 18.9692 21.4019 19.0052C21.358 19.0413 21.3049 19.0643 21.2484 19.0718C21.1919 19.0793 21.1342 19.071 21.0816 19.0478L21.0603 19.0361L20.6852 18.8526C20.5915 18.8065 20.4971 18.7618 20.4021 18.7184L20.3866 18.7112C19.7242 18.4123 19.2095 18.3283 18.4547 18.4605C18.3751 18.4743 18.2928 18.4563 18.2255 18.4102C18.1582 18.3641 18.1112 18.2937 18.0946 18.214C17.0538 13.1883 14.9984 9.17121 11.8538 6.64544C11.5764 6.4224 11.8232 5.98819 12.1537 6.11705L12.1527 6.11697ZM6.49463 4.22118L6.50166 4.23676C7.40419 6.25217 7.95023 8.39143 7.99533 10.4829C8.04913 13.0074 7.37669 15.3553 5.87982 17.4318L5.85792 17.4612L5.86098 17.4604C7.09207 16.973 8.38476 16.6838 9.74601 16.6256L9.80123 16.6239C11.7908 16.5471 13.8702 16.9677 16.0386 17.9457L16.1029 17.9757L16.0983 17.9363C15.6932 14.9464 14.3586 12.0482 12.3173 9.44123L12.2524 9.35799C10.5964 7.26425 8.54728 5.46104 6.5497 4.25352L6.49463 4.22118ZM14.1867 8.06343L14.2316 8.11504C16.3171 10.578 17.7623 13.8348 18.6108 17.6713L18.6404 17.8059L18.6626 17.8036C19.3788 17.7256 19.9467 17.8398 20.6084 18.1346L20.6347 18.1467L20.6989 18.1757L20.7437 18.1973L20.7233 18.1225C20.0603 15.7575 18.8134 13.3414 17.2151 11.2381L17.1614 11.1688C16.2173 9.93742 15.1992 8.87886 14.201 8.07557L14.1867 8.06343Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5002_7606">
+                                        <rect width="24" height="24" fill="white"
+                                            transform="matrix(0.997023 0.0771094 -0.0630985 0.998007 2.42188 0.901367)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="tooltip">
+                            <span class="tooltip-head">Midjourney</span>
+                            <div class="tooltip-content">
+                                <span>GENERATIVE ART AI</span>
+                            </div>
+                            <a href="midjourney.com/" target="_blank" aria-label="Midjourney">[<span
+                                    class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                    WEBSITE</span>]</a>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas for Midjourney -->
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasMidjourney"
+                        aria-labelledby="offcanvasMidjourneyLabel">
+                        <div class="offcanvas-body">
+                            <span class="offcanvas-head">Midjourney</span>
+                            <div class="offcanvas-body-content">
+                                <div class="offcanvas-body-content__info">
+                                    <span>GENERATIVE ART AI</span>
+                                </div>
+                                <a href="midjourney.com/" target="_blank" aria-label="Midjourney">[<span
+                                        class="scramble-text text" data-text="VISIT WEBSITE">VISIT
+                                        WEBSITE</span>]</a>
+                            </div>
+                            <span class="offcanvas-border"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>PLAYGROUND</h2>
+                <div class="playground-project">
+                    <a href="noise-injection.html" target="_blank">
+                        <span>Noise Injection Sequence</span>
+                        <div class="playground-project-date">
+                            <span class="text" data-text="2025">2025</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M6.00033 3.33301V4.66634H10.3937L2.66699 12.393L3.60699 13.333L11.3337 5.60634V9.99967H12.667V3.33301H6.00033Z"
+                                    fill="#A1A1A1" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="shatter-refraction.html" target="_blank">
+                        <span>Patterns - Shatter Refraction</span>
+                        <div class="playground-project-date">
+                            <span class="text" data-text="2025">2025</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M6.00033 3.33301V4.66634H10.3937L2.66699 12.393L3.60699 13.333L11.3337 5.60634V9.99967H12.667V3.33301H6.00033Z"
+                                    fill="#A1A1A1" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="quantum-fabric.html" target="_blank">
+                        <span>Patterns - Quantum Fabric</span>
+                        <div class="playground-project-date">
+                            <span class="text" data-text="2025">2025</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M6.00033 3.33301V4.66634H10.3937L2.66699 12.393L3.60699 13.333L11.3337 5.60634V9.99967H12.667V3.33301H6.00033Z"
+                                    fill="#A1A1A1" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h2>ARCHIVE</h2>
+                <span class="subhead mb-3">Ongoing design work (2019 - Present)</span>
+                <div class="row gx-3 gy-3">
+                    <div class="col-12">
+                        <div class="work-card random-vid padding-24">
+                            <video width="317" height="320" src="assets/vid/Screen-1.mp4" type="video/mp4"
+                                preload="auto" aria-label="Video" muted="" loop="" playsinline="">Your
+                                browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card random-vid  short-card">
+                            <video width="100" height="100" src="assets/vid/008.mp4" type="video/mp4" preload="auto"
+                                aria-label="Video" muted="" loop="" playsinline="">Your browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card random-vid padding-24">
+                            <video width="317" height="320" src="assets/vid/Screen-2.mp4" type="video/mp4"
+                                preload="auto" aria-label="Video" autoplay="" muted="" loop="" playsinline="">Your
+                                browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card random-vid short-card">
+                            <video width="100" height="100" src="assets/vid/009.mp4" type="video/mp4" preload="auto"
+                                aria-label="Video" autoplay="" muted="" loop="" playsinline="">Your browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card work-card-img padding-24 work-card-bg"
+                            style="background-image: url(assets/images/010-bg.avif);">
+                            <img src="assets/images/010.png"
+                                srcset="assets/images/010.png 1x, assets/images/010@2x.png 2x, assets/images/010@3x.png 3x"
+                                type="image/png" class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card">
+                            <video width="100" height="100" src="assets/vid/MP-001.mp4" type="video/mp4" preload="auto"
+                                aria-label="Video" autoplay="" muted="" loop="" playsinline="">Your browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card padding-24">
+                            <img src="assets/images/work-10.png"
+                                srcset="assets/images/work-10.png 1x, assets/images/work-10@2x.png 2x, assets/images/work-10@3x.png 3x"
+                                type="image/png" class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card work-full-video padding-24">
+                            <video width="564" height="328" src="assets/vid/003.mp4" type="video/mp4" preload="auto"
+                                aria-label="Video" autoplay="" muted="" loop="" playsinline="">Your browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card work-card-img work-card-black padding-24">
+                            <img src="assets/images/work-13.avif"
+                                srcset="assets/images/work-13.avif 1x, assets/images/work-13@2x.avif 2x, assets/images/work-13@3x.avif 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card work-card-img padding-24">
+                            <img src="assets/images/work-15.avif"
+                                srcset="assets/images/work-15.avif 1x, assets/images/work-15@2x.avif 2x, assets/images/work-15@3x.avif 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card object-fit-card">
+                            <img src="assets/images/work-16.png"
+                                srcset="assets/images/work-16.png 1x, assets/images/work-16@2x.png 2x, assets/images/work-16@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card work-full-video padding-24">
+                            <video width="536" height="328" src="assets/vid/007.mp4" type="video/mp4" preload="auto"
+                                aria-label="Video" autoplay="" muted="" loop="" playsinline="">Your browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card padding-24 work-card-img">
+                            <img src="assets/images/work-18.png"
+                                srcset="assets/images/work-18.png 1x, assets/images/work-18@2x.png 2x, assets/images/work-18@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card short-card-vid-marker">
+                            <video width="536" height="328" src="assets/vid/Screen-3.MP4" type="video/mp4"
+                                preload="auto" aria-label="Video" autoplay="" muted="" loop="" playsinline="">Your
+                                browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card object-fit-card">
+                            <img src="assets/images/work-19.avif"
+                                srcset="assets/images/work-19.avif 1x, assets/images/work-19@2x.avif 2x, assets/images/work-19@3x.avif 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card object-fit-card">
+                            <img src="assets/images/work-20.png"
+                                srcset="assets/images/work-20.png 1x, assets/images/work-20@2x.png 2x, assets/images/work-20@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card padding-24 work-card-img">
+                            <img src="assets/images/work-30.png"
+                                srcset="assets/images/work-30.png 1x, assets/images/work-30@2x.png 2x, assets/images/work-30@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card padding-24 work-card-img">
+                            <img src="assets/images/work-31.png"
+                                srcset="assets/images/work-31.png 1x, assets/images/work-31@2x.png 2x, assets/images/work-31@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card padding-24 work-card-img">
+                            <img src="assets/images/work-21.png"
+                                srcset="assets/images/work-21.png 1x, assets/images/work-21@2x.png 2x, assets/images/work-21@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card padding-24 work-card-img">
+                            <img src="assets/images/work-22.png"
+                                srcset="assets/images/work-22.png 1x, assets/images/work-22@2x.png 2x, assets/images/work-22@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card padding-24 work-card-img">
+                            <img src="assets/images/work-23.png"
+                                srcset="assets/images/work-23.png 1x, assets/images/work-23@2x.png 2x, assets/images/work-23@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card padding-24 work-card-img">
+                            <img src="assets/images/work-24.png"
+                                srcset="assets/images/work-24.png 1x, assets/images/work-24@2x.png 2x, assets/images/work-24@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card random-vid random-vid-full padding-24">
+                            <video width="778" height="488" src="assets/vid/009.MOV" type="video/mp4" preload="auto"
+                                aria-label="Video" autoplay="" muted="" loop="" playsinline="">Your browser does not
+                                support the video
+                                tag.</video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card object-fit-card work-25-img">
+                            <img src="assets/images/work-25.png"
+                                srcset="assets/images/work-25.png 1x, assets/images/work-25@2x.png 2x, assets/images/work-25@2x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="work-card short-card">
+                            <img src="assets/images/007.png" srcset="assets/images/007.png 1x, assets/images/007.png 2x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card object-fit-card">
+                            <img src="assets/images/work-28.avif"
+                                srcset="assets/images/work-28.avif 1x, assets/images/work-28@2x.avif 2x, assets/images/work-28@3x.avif 2x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="work-card padding-24 work-card-img">
+                            <img src="assets/images/work-29.png"
+                                srcset="assets/images/work-29.png 1x, assets/images/work-29@2x.png 2x, assets/images/work-29@3x.png 3x"
+                                class="img-fluid" alt="PRODUCT DETAIL PAGE" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Initialize Lenis
+        const lenis = new Lenis({
+            autoRaf: true,
+        });
+    </script>
+</body>
+
+</html>

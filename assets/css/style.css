@@ -712,6 +712,13 @@ main .container {
   object-fit: contain;
 }
 
+.work-card-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    display: block;
+}
+
 @media screen and (max-width:992px) {
   .work-card-img img {
     max-height: 304px !important;
@@ -734,7 +741,6 @@ main .container {
     max-width: 262px;
     height: auto;
     max-height: 230px !important;
-
   }
 
   .work-full-video video {

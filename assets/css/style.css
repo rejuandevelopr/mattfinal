@@ -50,7 +50,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0.24px;
+  letter-spacing: 0.28px;
   margin: 0;
 }
 
@@ -136,6 +136,10 @@ main .container {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.navbar-brand .text:first-child {
+  letter-spacing: 0.28px;
 }
 
 .gap-4px {
@@ -668,6 +672,7 @@ main .container {
 }
 
 @media screen and (max-width:768px) {
+
   .short-card,
   .work-card {
     height: 358px;
@@ -695,7 +700,22 @@ main .container {
 
 .random-vid video {
   max-width: 317.77px;
-  max-height: 320px;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.screen-3-vid video {
+  max-width: 328px;
+}
+
+.screen-4-vid video {
+  max-width: 260px;
+}
+
+.full-screen-vid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .random-vid-full {
@@ -713,10 +733,21 @@ main .container {
 }
 
 .work-card-img img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; 
-    display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.work-flex-top {
+  align-items: start;
+  padding-top: 0;
+}
+
+@media screen and (max-width:1440px) {
+  .work-flex-top img {
+    max-width: 232px;
+  }
 }
 
 @media screen and (max-width:992px) {
@@ -733,6 +764,14 @@ main .container {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
+  }
+
+  .screen-3-vid video {
+    max-width: 358px;
+  }
+
+  .screen-4-vid video {
+    max-width: 238px;
   }
 }
 

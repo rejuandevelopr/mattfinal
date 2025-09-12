@@ -513,6 +513,10 @@ main .container {
   letter-spacing: 0.24px;
 }
 
+.tooltip a .text {
+  font-family: Geist;
+}
+
 @media screen and (max-width: 768px) {
   .tooltip {
     display: none;

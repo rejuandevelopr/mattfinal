@@ -28,43 +28,57 @@ function createScrambleEffect(element, autoStart = false) {
   const CHARS = [...new Set(TARGET_TEXT.replace(/\s/g, '').split(''))];
   let interval = null;
 
+  // Add invisible clone to lock width (once)
+  if (!element.classList.contains('scramble-initialized')) {
+    const clone = document.createElement('span');
+    clone.textContent = TARGET_TEXT;
+    clone.style.visibility = 'hidden';
+    clone.style.height = '0';
+    clone.style.overflow = 'hidden';
+    clone.style.display = 'block';
+    clone.style.position = 'absolute';
+    clone.style.pointerEvents = 'none';
+    clone.style.userSelect = 'none';
+    clone.style.fontFamily = getComputedStyle(element).fontFamily;
+    clone.classList.add('scramble-clone');
+    element.appendChild(clone);
+    element.classList.add('scramble-initialized');
+    element.style.display = 'inline-block';
+    element.style.position = 'relative';
+  }
+
   function scramble() {
     let pos = 0;
     clearInterval(interval);
 
     interval = setInterval(() => {
       const scrambled = TARGET_TEXT.split("").map((char, index) => {
-        // Keep the first character unchanged
-        if (index === 0) {
-          return char;
-        }
-
+        if (index === 0) return char;
         if (pos / CYCLES_PER_LETTER > index) return char;
         return char === ' ' ? ' ' : CHARS[Math.floor(Math.random() * CHARS.length)];
       }).join("");
 
-      element.textContent = scrambled;
+      element.firstChild.textContent = scrambled; // update only main text node
       pos++;
 
       if (pos >= TARGET_TEXT.length * CYCLES_PER_LETTER) {
         clearInterval(interval);
-        element.textContent = TARGET_TEXT;
+        element.firstChild.textContent = TARGET_TEXT;
       }
     }, SHUFFLE_TIME);
   }
 
   if (autoStart) {
-    // Start scramble effect immediately when page loads
     setTimeout(scramble, 100);
   } else {
-    // Add hover events for manual trigger
     element.addEventListener("mouseenter", scramble);
     element.addEventListener("mouseleave", () => {
       clearInterval(interval);
-      element.textContent = TARGET_TEXT;
+      element.firstChild.textContent = TARGET_TEXT;
     });
   }
 }
+
 
 // Initialize hover scramble texts
 document.querySelectorAll('.scramble-text').forEach(element => {

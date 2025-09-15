@@ -694,8 +694,6 @@ main .container {
   object-fit: cover;
 }
 
-
-
 .work-full-video video {
   max-width: 564px;
   max-height: 328px;
@@ -713,11 +711,17 @@ main .container {
 }
 
 .screen-3-vid video {
-  max-width: 328px;
+  max-width: unset;
 }
 
 .screen-4-vid video {
-  max-width: 260px;
+  max-width: 310px;
+}
+
+@media screen and (max-width:1440px) {
+  .screen-4-vid video {
+    max-width: 280px;
+  }
 }
 
 .full-screen-vid video {
@@ -777,10 +781,6 @@ main .container {
   .screen-3-vid video {
     max-width: 358px;
   }
-
-  .screen-4-vid video {
-    max-width: 238px;
-  }
 }
 
 @media screen and (max-width:768px) {
@@ -804,6 +804,14 @@ main .container {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
+  }
+
+  .screen-3-vid video {
+    max-width: 478px;
+  }
+
+  .screen-4-vid video {
+    max-width: 278px;
   }
 }
 

@@ -779,6 +779,11 @@ main .container {
   padding-top: 0;
 }
 
+.progress-vid video {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
 @media screen and (max-width:1440px) {
   .work-flex-top img {
     max-width: 232px;

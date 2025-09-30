@@ -691,7 +691,6 @@ main .container {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
 }
 
 .work-full-video video {
@@ -716,6 +715,30 @@ main .container {
 
 .screen-4-vid video {
   max-width: 310px;
+}
+
+.slider-vid {
+  background-color: #000000;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel video {
+  width: 100%;
+  height: 100%;
+  
 }
 
 @media screen and (max-width:1440px) {
